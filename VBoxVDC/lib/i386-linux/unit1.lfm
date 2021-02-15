@@ -1,0 +1,88 @@
+object MainForm: TMainForm
+  Left = 248
+  Height = 107
+  Top = 139
+  Width = 400
+  ActiveControl = ReloadBtn
+  Caption = 'VirtualBox Virtual Drive Creator v0.8'
+  ClientHeight = 107
+  ClientWidth = 400
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.8.4.0'
+  object Bevel1: TBevel
+    Left = 0
+    Height = 107
+    Top = 0
+    Width = 400
+    Align = alClient
+  end
+  object FlashDriveBox: TComboBox
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideRight.Control = ReloadBtn
+    Left = 8
+    Height = 29
+    Top = 8
+    Width = 354
+    Anchors = [akTop, akLeft, akRight]
+    ItemHeight = 0
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object ReloadBtn: TButton
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = FlashDriveBox
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = FlashDriveBox
+    AnchorSideBottom.Side = asrBottom
+    Left = 362
+    Height = 29
+    Top = 8
+    Width = 32
+    Anchors = [akTop, akRight, akBottom]
+    BorderSpacing.Right = 6
+    Caption = 'R'
+    OnClick = ReloadBtnClick
+    TabOrder = 1
+  end
+  object CreateBtn: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 227
+    Height = 30
+    Top = 72
+    Width = 167
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 6
+    BorderSpacing.Bottom = 5
+    Caption = 'Create Virtual Drive'
+    OnClick = CreateBtnClick
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 26
+    Top = 76
+    Width = 170
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 5
+    Caption = 'License: GNU GPLv3'#10'Author: aLEX_gRANT (C) 2019'
+    Font.Color = clGray
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentColor = False
+    ParentFont = False
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.vmdk'
+    Filter = 'Virtual disk files (*.vmdk)|*.vmdk'
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    left = 192
+    top = 64
+  end
+end

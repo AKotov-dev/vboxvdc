@@ -1,0 +1,82 @@
+[NAME]
+name=vboxvdc
+
+[VERSION]
+version=0.9
+
+[RELEASE]
+release=1.mrx7
+
+[GROUP]
+group=Emulators
+
+[DESCRIPTION]
+0=The program creates a virtual disk from a block device.
+1=You can create a virtual disk from a USB drive and boot from it.
+2=...
+3=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2020
+
+[SUMMARY]
+summary=VirtualBox Virtual Drive Creator
+
+[URLCOPY]
+urlcopy=https://cloud.mail.ru/public/5PKH/yGHRPMbYD
+
+[LICENSE]
+license=GPLv3+
+
+[DEPS]
+deps=virtualbox
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=0
+
+[SIGN]
+sign=0
+
+[FILES]
+0=/usr/share/VBoxVDC/
+1=/usr/share/applications/vboxvdc.desktop
+2=/usr/share/doc/vboxvdc/
+
+[AFTERINSTALL]
+0=#ldconfig
+1=#update-desktop-database -q /usr/share/applications
+2=#update-mime-database /usr/share/mime
+3=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
+
+[AFTERREMOVE]
+0=#ldconfig
+1=#update-desktop-database -q /usr/share/applications
+2=#update-mime-database /usr/share/mime
+3=#gtk-update-icon-cache -q -f /usr/share/icons/hicolor
+
+[URL32]
+url32=https://cloud.mail.ru/public/5PKH/yGHRPMbYD
+
+[URL64]
+url64=https://cloud.mail.ru/public/5PKH/yGHRPMbYD
+
+[PROGRAMNAME]
+programname=VBoxVDC
+
+[DEVTOOL]
+devtool=Lazarus
+
+[TOOLVERSION]
+toolversion=1.8.4
+
+[INFO]
+0=For the reproduction of the program is needed by Lazarus-1.8.4
+1=
+2=v0.9-1
+3=+ Moving the shortcut to the "Emulators" menu section

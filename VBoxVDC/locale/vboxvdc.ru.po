@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: ru_RU\n"
+
+#: tmainform.caption
+msgid "VirtualBox Virtual Drive Creator v0.9"
+msgstr ""
+
+#: tmainform.createbtn.caption
+msgid "Create Virtual Drive"
+msgstr "Создать Вирт. Диск"
+
+#: tmainform.label1.caption
+msgid ""
+"License: GPLv3\n"
+"Author: alex_q_2000 (C) 2020\n"
+msgstr ""
+"Лицензия: GPLv3\n"
+"Автор: alex_q_2000 (C) 2020\n"
+
+#: tmainform.reloadbtn.caption
+msgid "R"
+msgstr ""
+
+#: tmainform.reloadbtn.hint
+msgid "Refresh"
+msgstr "Обновить"
+
+#: unit1.swarning1
+msgid "The user \""
+msgstr "Пользователь \""
+
+#: unit1.swarning2
+msgid ""
+"\" is not in groups \"disk\", \"vboxusers\" and \"vboxsf\"\n"
+"\n"
+"Run the command in terminal (su/password):\n"
+"usermod -a -G disk,vboxusers,vboxsf $USER\n"
+"\n"
+"...and reboot your computer to apply privileges!\n"
+msgstr ""
+"\" не в группах \"disk\", \"vboxusers\" и \"vboxsf\"\n"
+"\n"
+"Cкомандуйте в терминале (su/password):\n"
+"usermod -a -G disk,vboxusers,vboxsf $USER\n"
+"\n"
+"...и перезагрузите компьютер для применения привилегий!\n"
