@@ -10,4 +10,6 @@ Create a new Virtual Vachine in VirtualBox and specify the previously created vi
 
 Made and tested in Mageia Linux-7/8.
 
+![](https://github.com/AKotov-dev/vboxvdc/blob/main/ScreenShots/vboxvdc.png)
+
 ![](https://github.com/AKotov-dev/vboxvdc/blob/main/ScreenShots/VirtualBox-Disk.png)
