@@ -68,7 +68,7 @@ toolversion=2.2.0
 
 [INFO]
 0=v1.0
-1=+ the procedure for reading removable devices has been changed
+1=+ changed the procedure for reading the list of removable devices
 2=+ changed the prefix of packets to mrx9
 3=
 4=v0.9-1
