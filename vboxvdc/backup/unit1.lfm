@@ -9,7 +9,7 @@ object MainForm: TMainForm
   ClientWidth = 406
   OnCreate = FormCreate
   OnShow = FormShow
-  Position = poScreenCenter
+  Position = poDefault
   SessionProperties = 'Top;Left;Width;Height'
   LCLVersion = '2.2.0.4'
   object Bevel1: TBevel

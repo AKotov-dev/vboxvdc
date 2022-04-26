@@ -67,7 +67,7 @@ devtool=Lazarus
 toolversion=2.2.0
 
 [INFO]
-0=v1.0-0
+0=v1.0
 1=+ the procedure for reading removable devices has been changed
 2=+ changed the prefix of packets to mrx9
 3=
