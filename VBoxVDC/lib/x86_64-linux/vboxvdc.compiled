@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="/usr/bin/fpc" Date="1539366583"/>
-  <Params Value=" -MObjFPC -Scghi -CX -Cg -O3 -XX -l -vewnhibq -Fi/home/marsik/Desktop/VBoxVDC/lib/x86_64-linux -Fu/home/marsik/.lazarus/lib/units/x86_64-linux/gtk2 -Fu/home/marsik/.lazarus/lib/LCLBase/units/x86_64-linux -Fu/home/marsik/.lazarus/lib/LazUtils/lib/x86_64-linux -Fu/home/marsik/.lazarus/lib/units/x86_64-linux -Fu/home/marsik/Desktop/VBoxVDC/ -FU/home/marsik/Desktop/VBoxVDC/lib/x86_64-linux/ -dLCL -dLCLgtk2 vboxvdc.lpr"/>
-</CONFIG>

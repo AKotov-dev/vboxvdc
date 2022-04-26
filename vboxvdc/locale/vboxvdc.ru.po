@@ -13,7 +13,7 @@ msgstr ""
 "Language: ru_RU\n"
 
 #: tmainform.caption
-msgid "VirtualBox Virtual Drive Creator v0.9"
+msgid "VB Virtual Drive Creator"
 msgstr ""
 
 #: tmainform.createbtn.caption
@@ -21,9 +21,13 @@ msgid "Create Virtual Drive"
 msgstr "Создать Вирт. Диск"
 
 #: tmainform.label1.caption
+#, fuzzy
+#| msgid ""
+#| "License: GPLv3\n"
+#| "Author: alex_q_2000 (C) 2020\n"
 msgid ""
 "License: GPLv3\n"
-"Author: alex_q_2000 (C) 2020\n"
+"Author: alex_q_2000 (C) 2020"
 msgstr ""
 "Лицензия: GPLv3\n"
 "Автор: alex_q_2000 (C) 2020\n"
@@ -41,13 +45,21 @@ msgid "The user \""
 msgstr "Пользователь \""
 
 #: unit1.swarning2
+#, fuzzy
+#| msgid ""
+#| "\" is not in groups \"disk\", \"vboxusers\" and \"vboxsf\"\n"
+#| "\n"
+#| "Run the command in terminal (su/password):\n"
+#| "usermod -a -G disk,vboxusers,vboxsf $USER\n"
+#| "\n"
+#| "...and reboot your computer to apply privileges!\n"
 msgid ""
 "\" is not in groups \"disk\", \"vboxusers\" and \"vboxsf\"\n"
 "\n"
 "Run the command in terminal (su/password):\n"
 "usermod -a -G disk,vboxusers,vboxsf $USER\n"
 "\n"
-"...and reboot your computer to apply privileges!\n"
+"...and reboot your computer to apply privileges!"
 msgstr ""
 "\" не в группах \"disk\", \"vboxusers\" и \"vboxsf\"\n"
 "\n"
@@ -55,3 +67,4 @@ msgstr ""
 "usermod -a -G disk,vboxusers,vboxsf $USER\n"
 "\n"
 "...и перезагрузите компьютер для применения привилегий!\n"
+

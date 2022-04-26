@@ -1,0 +1,75 @@
+[NAME]
+name=vboxvdc
+
+[VERSION]
+version=1.0
+
+[RELEASE]
+release=0.mrx9
+
+[GROUP]
+group=Emulators
+
+[DESCRIPTION]
+0=The program creates a virtual disk from a removable device.
+1=You can create a virtual disk from a USB drive and boot from it.
+2=...
+3=More information: /usr/share/doc/package_name/repack.txt
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2022
+
+[SUMMARY]
+summary=VirtualBox Virtual Drive Creator
+
+[URLCOPY]
+urlcopy=https://github.com/AKotov-dev/vboxvdc
+
+[LICENSE]
+license=GPLv3+
+
+[DEPS]
+deps=virtualbox
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=0
+
+[SIGN]
+sign=0
+
+[DEB]
+deb=0
+
+[FILES]
+0=/usr/share/vboxvdc/
+1=/usr/share/applications/vboxvdc.desktop
+2=/usr/share/doc/vboxvdc/
+
+[URL32]
+url32=https://github.com/AKotov-dev/vboxvdc
+
+[URL64]
+url64=https://github.com/AKotov-dev/vboxvdc
+
+[PROGRAMNAME]
+programname=VBoxVDC
+
+[DEVTOOL]
+devtool=Lazarus
+
+[TOOLVERSION]
+toolversion=2.2.0
+
+[INFO]
+0=v1.0-0
+1=+ the procedure for reading removable devices has been changed
+2=+ changed the prefix of packets to mrx9
+3=
+4=v0.9-1
+5=+ Moving the shortcut to the "Emulators" menu section

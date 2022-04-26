@@ -1,0 +1,39 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tmainform.caption
+msgid "VB Virtual Drive Creator"
+msgstr ""
+
+#: tmainform.createbtn.caption
+msgid "Create Virtual Drive"
+msgstr ""
+
+#: tmainform.label1.caption
+msgid ""
+"License: GPLv3\n"
+"Author: alex_q_2000 (C) 2020"
+msgstr ""
+
+#: tmainform.reloadbtn.caption
+msgid "R"
+msgstr ""
+
+#: tmainform.reloadbtn.hint
+msgid "Refresh"
+msgstr ""
+
+#: unit1.swarning1
+msgid "The user \""
+msgstr ""
+
+#: unit1.swarning2
+msgid ""
+"\" is not in groups \"disk\", \"vboxusers\" and \"vboxsf\"\n"
+"\n"
+"Run the command in terminal (su/password):\n"
+"usermod -a -G disk,vboxusers,vboxsf $USER\n"
+"\n"
+"...and reboot your computer to apply privileges!"
+msgstr ""
+

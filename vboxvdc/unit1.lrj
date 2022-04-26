@@ -1,5 +1,5 @@
 {"version":1,"strings":[
-{"hash":189960025,"name":"tmainform.caption","sourcebytes":[86,105,114,116,117,97,108,66,111,120,32,86,105,114,116,117,97,108,32,68,114,105,118,101,32,67,114,101,97,116,111,114,32,118,48,46,57],"value":"VirtualBox Virtual Drive Creator v0.9"},
+{"hash":220491618,"name":"tmainform.caption","sourcebytes":[86,66,32,86,105,114,116,117,97,108,32,68,114,105,118,101,32,67,114,101,97,116,111,114],"value":"VB Virtual Drive Creator"},
 {"hash":146640072,"name":"tmainform.reloadbtn.hint","sourcebytes":[82,101,102,114,101,115,104],"value":"Refresh"},
 {"hash":82,"name":"tmainform.reloadbtn.caption","sourcebytes":[82],"value":"R"},
 {"hash":200976453,"name":"tmainform.createbtn.caption","sourcebytes":[67,114,101,97,116,101,32,86,105,114,116,117,97,108,32,68,114,105,118,101],"value":"Create Virtual Drive"},

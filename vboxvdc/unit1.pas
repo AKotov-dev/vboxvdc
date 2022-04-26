@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls, Process, DefaultTranslator, PropertyStorage;
+  ExtCtrls, Process, DefaultTranslator, IniPropStorage;
 
 type
   TCharSet = set of char;
@@ -16,12 +16,14 @@ type
   TMainForm = class(TForm)
     Bevel1: TBevel;
     CreateBtn: TButton;
+    IniPropStorage1: TIniPropStorage;
     Label1: TLabel;
     ReloadBtn: TButton;
     FlashDriveBox: TComboBox;
     SaveDialog1: TSaveDialog;
     procedure CreateBtnClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure ReloadBtnClick(Sender: TObject);
 
   private
@@ -137,18 +139,20 @@ begin
   Screen.Cursor := crHourGlass;
   try
     ExProcess.Executable := 'bash';
-    ExProcess.Options := ExProcess.Options + [poUsePipes];  //poWaitOnExit,
+    ExProcess.Options := ExProcess.Options + [poWaitOnExit];
     ExProcess.Parameters.Add('-c');
 
     ExProcess.Parameters.Add(
-      'lsblk -d -p --list | awk ' + '''' + '{ print $1, $4, $6 }' +
-      '''' + ' | grep "disk"');
+      '>~/.vboxvdc/devlist; dev=$(lsblk -ld | cut -f1 -d" " | tail -n +2);' +
+      'for i in $dev; do if [[ $(cat /sys/block/$i/removable) -eq 1 ]]; then ' +
+      'echo "/dev/$(lsblk -ld | grep $i | awk ' + '''' + '{print $1,$4}' +
+      '''' + ')" >> ~/.vboxvdc/devlist; fi; done');
 
     ExProcess.Execute;
 
-    FlashDriveBox.Items.LoadFromStream(ExProcess.Output);
+    FlashDriveBox.Items.LoadFromFile(GetUserDir + '.vboxvdc/devlist');
 
-    if FlashDriveBox.Items.Count > -1 then
+    if FlashDriveBox.Items.Count <> 0 then
       FlashDriveBox.ItemIndex := 0;
 
   finally
@@ -164,6 +168,11 @@ end;
 
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
+  //Папка файлов конфигурации
+  if not DirectoryExists(GetUserDir + '.vboxvdc') then MkDir(GetUserDir + '.vboxvdc');
+
+  IniPropStorage1.IniFileName:=GetUserDir + '.vboxvdc/settings';
+
   //Начитываем список блочных устройств
   ReloadBtn.Click;
 
@@ -176,6 +185,12 @@ begin
     SaveDialog1.InitialDir := GetEnvironmentVariable('HOME') + '/Desktop'
   else
     SaveDialog1.InitialDir := '/home';
+end;
+
+procedure TMainForm.FormShow(Sender: TObject);
+begin
+  IniPropStorage1.Restore;
+  MainForm.Caption := Application.Title;
 end;
 
 procedure TMainForm.CreateBtnClick(Sender: TObject);
