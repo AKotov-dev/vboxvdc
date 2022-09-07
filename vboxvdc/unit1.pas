@@ -171,7 +171,7 @@ begin
   //Папка файлов конфигурации
   if not DirectoryExists(GetUserDir + '.vboxvdc') then MkDir(GetUserDir + '.vboxvdc');
 
-  IniPropStorage1.IniFileName:=GetUserDir + '.vboxvdc/settings';
+  IniPropStorage1.IniFileName := GetUserDir + '.vboxvdc/settings';
 
   //Начитываем список блочных устройств
   ReloadBtn.Click;
@@ -221,8 +221,8 @@ begin
 
       ExProcess.Parameters.Add(
         'VBoxManage internalcommands createrawvmdk -filename "' +
-        SaveDialog1.FileName + '" -rawdisk ' +
-        ExtractWord(1, FlashDriveBox.Text, [' ']));
+        SaveDialog1.FileName + '" -rawdisk ' + ExtractWord(1,
+        FlashDriveBox.Text, [' ']));
 
       ExProcess.Execute;
 

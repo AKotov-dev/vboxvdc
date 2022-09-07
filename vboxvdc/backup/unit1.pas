@@ -143,7 +143,7 @@ begin
     ExProcess.Parameters.Add('-c');
 
     ExProcess.Parameters.Add(
-      '>~/.vboxvdc/devlist; dev=$(lsblk -ldnA | cut -f1 -d" ";' +
+      '>~/.vboxvdc/devlist; dev=$(lsblk -ldnA | cut -f1 -d" ");' +
       'for i in $dev; do if [[ $(cat /sys/block/$i/removable) -eq 1 ]]; then ' +
       'echo "/dev/$(lsblk -ld | grep $i | awk ' + '''' + '{print $1,$4}' +
       '''' + ')" >> ~/.vboxvdc/devlist; fi; done');
