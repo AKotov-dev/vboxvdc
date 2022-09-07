@@ -2,7 +2,7 @@
 name=vboxvdc
 
 [VERSION]
-version=1.0
+version=1.1
 
 [RELEASE]
 release=0.mrx9
@@ -32,7 +32,7 @@ urlcopy=https://github.com/AKotov-dev/vboxvdc
 license=GPLv3+
 
 [DEPS]
-deps=virtualbox
+deps=virtualbox gtk2
 
 [META]
 meta=0
@@ -67,9 +67,14 @@ devtool=Lazarus
 toolversion=2.2.0
 
 [INFO]
-0=v1.0
-1=+ changed the procedure for reading the list of removable devices
-2=+ the prefix of rpm packages has been changed to mrx9
-3=
-4=v0.9-1
-5=+ Moving the shortcut to the "Emulators" menu section
+0=v1.1
+1=+ Release for Mageia-9 and higher
+2=+ lsblk v2.38 (added the -A option)
+3=+ Added gtk2 dependency
+4=
+5=v1.0
+6=+ changed the procedure for reading the list of removable devices
+7=+ the prefix of rpm packages has been changed to mrx9
+8=
+9=v0.9-1
+10=+ Moving the shortcut to the "Emulators" menu section
