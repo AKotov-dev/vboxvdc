@@ -219,10 +219,12 @@ begin
       ExProcess.Options := ExProcess.Options + [poUsePipes]; //, poWaitOnExit];
       ExProcess.Parameters.Add('-c');
 
+      //VirtrualBox-7 and higher support
+      //https://forums.virtualbox.org/viewtopic.php?f=7&p=526014#p525908
       ExProcess.Parameters.Add(
-        'VBoxManage internalcommands createrawvmdk -filename "' +
-        SaveDialog1.FileName + '" -rawdisk ' + ExtractWord(1,
-        FlashDriveBox.Text, [' ']));
+        'VBoxManage createmedium disk --filename "' + SaveDialog1.FileName +
+        '" --format=VMDK --variant RawDisk --property RawDrive=' +
+        ExtractWord(1, FlashDriveBox.Text, [' ']));
 
       ExProcess.Execute;
 

@@ -7,7 +7,7 @@
         <CompatibilityMode Value="True"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <Title Value="VirtualBox Virtual Drive Creator v1.1"/>
+      <Title Value="VirtualBox Virtual Drive Creator v1.2"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
       <Icon Value="0"/>
