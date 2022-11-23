@@ -219,8 +219,6 @@ begin
       ExProcess.Options := ExProcess.Options + [poUsePipes]; //, poWaitOnExit];
       ExProcess.Parameters.Add('-c');
 
-      ShowMessage(ExtractWord(1, FlashDriveBox.Text, [' ']));
-
       //VirtrualBox-7.0.3 and higher support
       //https://forums.virtualbox.org/viewtopic.php?f=7&p=526014#p525908
       ExProcess.Parameters.Add(
