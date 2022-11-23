@@ -143,10 +143,10 @@ begin
     ExProcess.Parameters.Add('-c');
 
     ExProcess.Parameters.Add(
-      '>~/.vboxvdc/devlist; dev=$(lsblk -ldnA | cut -f1 -d" ");' +
+      '>~/.vboxvdc/devlist; dev=$(lsblk -ldn | cut -f1 -d" ");' +
       'for i in $dev; do if [[ $(cat /sys/block/$i/removable) -eq 1 ]]; then ' +
       'echo "/dev/$(lsblk -ld | grep $i | awk ' + '''' + '{print $1,$4}' +
-      '''' + ')" >> ~/.vboxvdc/devlist; fi; done');
+      '''' + ')" | grep -Ev "\/dev\/sr|0B" >> ~/.vboxvdc/devlist; fi; done');
 
     ExProcess.Execute;
 
@@ -219,7 +219,9 @@ begin
       ExProcess.Options := ExProcess.Options + [poUsePipes]; //, poWaitOnExit];
       ExProcess.Parameters.Add('-c');
 
-      //VirtrualBox-7 and higher support
+      ShowMessage(ExtractWord(1, FlashDriveBox.Text, [' ']));
+
+      //VirtrualBox-7.0.3 and higher support
       //https://forums.virtualbox.org/viewtopic.php?f=7&p=526014#p525908
       ExProcess.Parameters.Add(
         'VBoxManage createmedium disk --filename "' + SaveDialog1.FileName +

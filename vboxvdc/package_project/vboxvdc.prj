@@ -68,8 +68,8 @@ toolversion=2.2.0
 
 [INFO]
 0=v1.2
-1=+ VirtualBox-7 and higher support
-2=+ RPM packages for Mageia-9 and higher
+1=+ VirtualBox-7.0.3 and higher support
+2=+ RPM packages for Mageia-8 and Mageia-9
 3=
 4=v1.1
 5=+ Release for Mageia-9 and higher
