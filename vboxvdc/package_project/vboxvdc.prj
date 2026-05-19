@@ -2,7 +2,7 @@
 name=vboxvdc
 
 [VERSION]
-version=1.2
+version=1.3
 
 [RELEASE]
 release=0.mrx10
