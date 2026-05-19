@@ -1,17 +1,16 @@
 object MainForm: TMainForm
-  Left = 304
+  Left = 317
   Height = 107
-  Top = 123
+  Top = 125
   Width = 412
   ActiveControl = ReloadBtn
   Caption = 'VB Virtual Drive Creator'
   ClientHeight = 107
   ClientWidth = 412
+  SessionProperties = 'Top;Left;Width;Height'
+  LCLVersion = '4.4.0.0'
   OnCreate = FormCreate
   OnShow = FormShow
-  Position = poDefault
-  SessionProperties = 'Top;Left;Width;Height'
-  LCLVersion = '2.2.0.4'
   object Bevel1: TBevel
     Left = 0
     Height = 107
@@ -46,10 +45,10 @@ object MainForm: TMainForm
     Anchors = [akTop, akRight, akBottom]
     BorderSpacing.Right = 6
     Caption = 'R'
-    OnClick = ReloadBtnClick
     ParentShowHint = False
     ShowHint = True
     TabOrder = 1
+    OnClick = ReloadBtnClick
   end
   object CreateBtn: TButton
     AnchorSideRight.Control = Owner
@@ -64,8 +63,8 @@ object MainForm: TMainForm
     BorderSpacing.Right = 6
     BorderSpacing.Bottom = 5
     Caption = 'Create Virtual Drive'
-    OnClick = CreateBtnClick
     TabOrder = 2
+    OnClick = CreateBtnClick
   end
   object Label1: TLabel
     AnchorSideBottom.Control = Owner
@@ -73,10 +72,10 @@ object MainForm: TMainForm
     Left = 8
     Height = 28
     Top = 74
-    Width = 165
+    Width = 158
     Anchors = [akLeft, akBottom]
     BorderSpacing.Bottom = 5
-    Caption = 'License: GPLv3'#10'Author: alex_q_2000 (C) 2020'
+    Caption = 'License: GPLv3'#10'Author: AKotov-dev (C) 2026'
     Font.Color = clGray
     Font.Height = -11
     Font.Name = 'Sans'

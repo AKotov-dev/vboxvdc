@@ -32,7 +32,7 @@ type
 
   end;
 
-//Ресурсы перевода
+  //Ресурсы перевода
 resourcestring
   SWarning1 = 'The user "';
   SWarning2 = '" is not in groups "disk", "vboxusers" and "vboxsf"' +

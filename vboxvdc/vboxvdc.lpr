@@ -14,7 +14,8 @@ uses
 
 begin
   RequireDerivedFormResource:=True;
-  Application.Title:='VirtualBox Virtual Drive Creator v1.2';
+  Application.Scaled:=True;
+  Application.Title:='VirtualBox Virtual Drive Creator v1.3';
   Application.Initialize;
   Application.CreateForm(TMainForm, MainForm);
   Application.Run;
