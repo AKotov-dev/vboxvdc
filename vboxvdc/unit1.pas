@@ -197,13 +197,15 @@ begin
   if DirectoryExists(GetEnvironmentVariable('HOME') + '/Desktop') then
     SaveDialog1.InitialDir := GetEnvironmentVariable('HOME') + '/Desktop'
   else
-    SaveDialog1.InitialDir := '/home';
+    SaveDialog1.InitialDir := GetUserDir;
 end;
 
 procedure TMainForm.FormShow(Sender: TObject);
 begin
   IniPropStorage1.Restore;
   MainForm.Caption := Application.Title;
+
+  ReloadBtn.Width := ReloadBtn.Height;
 end;
 
 procedure TMainForm.CreateBtnClick(Sender: TObject);

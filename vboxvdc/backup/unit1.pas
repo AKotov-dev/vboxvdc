@@ -204,6 +204,8 @@ procedure TMainForm.FormShow(Sender: TObject);
 begin
   IniPropStorage1.Restore;
   MainForm.Caption := Application.Title;
+
+  ReloadBtn.Width := ReloadBtn.Height;
 end;
 
 procedure TMainForm.CreateBtnClick(Sender: TObject);

@@ -1,21 +1,21 @@
 object MainForm: TMainForm
   Left = 324
-  Height = 108
+  Height = 118
   Top = 124
-  Width = 412
+  Width = 431
   ActiveControl = ReloadBtn
   Caption = 'VB Virtual Drive Creator'
-  ClientHeight = 108
-  ClientWidth = 412
+  ClientHeight = 118
+  ClientWidth = 431
   SessionProperties = 'Top;Left;Width;Height'
   LCLVersion = '4.6.0.0'
   OnCreate = FormCreate
   OnShow = FormShow
   object Bevel1: TBevel
     Left = 0
-    Height = 108
+    Height = 118
     Top = 0
-    Width = 412
+    Width = 431
     Align = alClient
   end
   object FlashDriveBox: TComboBox
@@ -24,7 +24,7 @@ object MainForm: TMainForm
     Left = 8
     Height = 37
     Top = 8
-    Width = 365
+    Width = 384
     Anchors = [akTop, akLeft, akRight]
     ItemHeight = 0
     Style = csDropDownList
@@ -37,7 +37,7 @@ object MainForm: TMainForm
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = FlashDriveBox
     AnchorSideBottom.Side = asrBottom
-    Left = 373
+    Left = 392
     Height = 37
     Hint = 'Refresh'
     Top = 8
@@ -55,9 +55,9 @@ object MainForm: TMainForm
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
-    Left = 232
+    Left = 251
     Height = 31
-    Top = 72
+    Top = 82
     Width = 174
     Anchors = [akRight, akBottom]
     BorderSpacing.Right = 6
@@ -71,7 +71,7 @@ object MainForm: TMainForm
     AnchorSideBottom.Side = asrBottom
     Left = 8
     Height = 28
-    Top = 75
+    Top = 85
     Width = 158
     Anchors = [akLeft, akBottom]
     BorderSpacing.Bottom = 5
