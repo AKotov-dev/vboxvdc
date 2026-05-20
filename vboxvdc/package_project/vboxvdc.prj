@@ -2,7 +2,7 @@
 name=vboxvdc
 
 [VERSION]
-version=1.3
+version=1.4
 
 [RELEASE]
 release=0.mrx10
@@ -58,25 +58,29 @@ programname=VBoxVDC
 devtool=Lazarus
 
 [TOOLVERSION]
-toolversion=4.4
+toolversion=4.6
 
 [INFO]
-0=v1.3
-1=+ Build in Lazarus-4.4
+0=v1.4
+1=+ Build in Lazarus-4.6
 2=+ RPM packages for Mageia-10
 3=
-4=v1.2
-5=+ VirtualBox-7.0.3 and higher support
-6=+ RPM packages for Mageia-8 and Mageia-9
+4=v1.3
+5=+ Build in Lazarus-4.4
+6=+ RPM packages for Mageia-10
 7=
-8=v1.1
-9=+ Release for Mageia-9 and higher
-10=+ lsblk v2.38 (added the -A option)
-11=+ Added gtk2 dependency
-12=
-13=v1.0
-14=+ changed the procedure for reading the list of removable devices
-15=+ the prefix of rpm packages has been changed to mrx9
+8=v1.2
+9=+ VirtualBox-7.0.3 and higher support
+10=+ RPM packages for Mageia-8 and Mageia-9
+11=
+12=v1.1
+13=+ Release for Mageia-9 and higher
+14=+ lsblk v2.38 (added the -A option)
+15=+ Added gtk2 dependency
 16=
-17=v0.9-1
-18=+ Moving the shortcut to the "Emulators" menu section
+17=v1.0
+18=+ changed the procedure for reading the list of removable devices
+19=+ the prefix of rpm packages has been changed to mrx9
+20=
+21=v0.9-1
+22=+ Moving the shortcut to the "Emulators" menu section

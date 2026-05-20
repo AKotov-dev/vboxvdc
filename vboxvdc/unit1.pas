@@ -16,6 +16,7 @@ type
   TMainForm = class(TForm)
     Bevel1: TBevel;
     CreateBtn: TButton;
+    Image1: TImage;
     IniPropStorage1: TIniPropStorage;
     Label1: TLabel;
     ReloadBtn: TButton;
@@ -167,7 +168,19 @@ begin
 end;
 
 procedure TMainForm.FormCreate(Sender: TObject);
+var
+  bmp: TBitmap;
 begin
+  // Устраняем баг иконки приложения
+  bmp := TBitmap.Create;
+  try
+    bmp.PixelFormat := pf32bit;
+    bmp.Assign(Image1.Picture.Graphic);
+    Application.Icon.Assign(bmp);
+  finally
+    bmp.Free;
+  end;
+
   //Папка файлов конфигурации
   if not DirectoryExists(GetUserDir + '.vboxvdc') then MkDir(GetUserDir + '.vboxvdc');
 
